@@ -48,7 +48,7 @@ checkSystem() {
 		installType='yum -y install'
 		removeType='yum -y remove'
 		upgrade="yum update -y --skip-broken"
-
+g
 	elif grep </etc/issue -q -i "debian" && [[ -f "/etc/issue" ]] || grep </etc/issue -q -i "debian" && [[ -f "/proc/version" ]]; then
 		release="debian"
 		installType='apt -y install'
